@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<script>
+    function imgErrorHTML(image) {
+        image.src = './img/default-img.png';
+    }
+</script>
+
+<body>
+    <header>
+        <section class="menu">
+            <nav class="menu-nav container">
+                <a class="menu-logo-box" href="./index.html">
+                    <img class="menu-logo-img" src="./img/Logo.svg" alt="alurageek">
+                </a>
+                <div class="menu-search-box">
+                    <input type="search" class="menu-search-input" placeholder="¿Qué deseas buscar?">
+                    <i class="fa-solid fa-magnifying-glass menu-search-icon"></i>
+                </div>
+                <div class="menu-cart-login-box">
+                    <a class="menu-button" href="./login.html">Ingresar <i class="fa-solid fa-user"></i></a>
+                </div>
+            </nav>
+        </section>
+    </header>
+    <main>
+        
+        <section class="add-product">
+            <div class="add-product-container container">
+                <h1 class="add-product-form-title">Agregar nuevo producto</h1>
+                <form class="add-product-form" action="">
+                    <label class="add-product-form-label" for="product-name" >
+                        <p class="add-product-form-field">Nombre del producto:</p>
+                        <input class="add-product-form-input form-input" type="text" id="product-name" name="product-name" autocomplete="off" required maxlength="20">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <label class="add-product-form-label" for="category" >
+                        <p class="add-product-form-field">Categoría:</p>
+                        <input class="add-product-form-input form-input" type="text" id="category" name="category" autocomplete="off" required>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <label class="add-product-form-label" for="img" >
+                        <p class="add-product-form-field">URL de la imágen:</p>
+                        <input class="add-product-form-input form-input" type="text" id="img" name="url" required>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <label class="add-product-form-label" for="price" >
+                        <p class="add-product-form-field">Precio del producto:</p>
+                        <input class="add-product-form-input form-input" type="number" id="price" name="price" autocomplete="off" required>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <label class="add-product-form-label" for="description">
+                        <p class="add-product-form-field">Descripción del producto:</p>
+                        <textarea class="add-product-form-input form-input" type="text" id="description" name="description" rows="5" autocomplete="off" required maxlength="150"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <button class="add-product-form-submit" type="submit" id="submit">Agregar producto</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+         <!---------------------------- SECCION FOOTER ----------------------->
+    <footer class="footer">
+        <div class="footer-container container">
+            <img src="./img/Logo.svg" alt="" class="footer-logo-img">
+            <ul class="footer-list">
+                <li class="footer-item-list"><a href="#">Quiénes somos</a></li>
+                <li class="footer-item-list"><a href="#">Política de privacidad</a></li>
+                <li class="footer-item-list"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer-item-list"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer-item-list"><a href="#">Franquicias</a></li>
+                <li class="footer-item-list"><a href="#">Anuncie aquí</a></li>
+            </ul>
+            <div class="footer-form-box">
+                <h3 class="footer-form-title">Hable con nosotros</h3>
+                <form action="" class="footer-form">
+                    <label for="name" class="footer-form-label">
+                        <p class="footer-form-field">Nombre:</p>
+                        <input type="text" class="footer-form-input" id="name" name="name" autocomplete="off" required>
+                    </label>
+                    <label for="message" class="footer-form-label">
+                        <p class="footer-form-field">Mensaje:</p>
+                        <textarea class="footer-form-input" type="text" name="message" id="message" 
+                       autocomplete="off" rows="5" required></textarea>
+                    </label>
+                    <button class="footer-form-submit" type="submit" id="submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-dev">
+            <div class="footer-dev-name">
+                <span>Pablo Moya &COPY;<span id="year"></span></span>
+            </div>
+            <div class="footer-dev-links">
+                <a href="https://github.com/Mpablom"><i class="fa-brands fa-github" id="footer-dev-icons"></i></a>
+                <a href="https://www.linkedin.com/in/pablo-moya-a24525181/"><i class="fa-brands fa-linkedin-in" id="footer-dev-icons"></i></a>
+                <a href="https://www.facebook.com/pablo.moya.940/"><i class="fa-brands fa-facebook" id="footer-dev-icons"></i></a>
+                <a href="https://twitter.com/Pablosj_10"><i class="fa-brands fa-twitter" id="footer-dev-icons"></i></a>
+                <a href="https://www.instagram.com/pablomoyasj/?hl=es"><i class="fa-brands fa-instagram" id="footer-dev-icons"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/searchButton.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./js/add-prod.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

@@ -4,19 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek | Login</title>
-    <!-- Icons -->
-    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
-    <!-- Font -->
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- CSS -->
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
-    
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/sections.css">
+    <link rel="stylesheet" href="./css/footer.css">
 </head>
+
+<script>
+    function imgErrorHTML(image) {
+        image.src = './img/default-img.png';
+    }
+</script>
+
 <body>
     <header>
         <section class="menu">
@@ -29,59 +34,47 @@
                     <i class="fa-solid fa-magnifying-glass menu-search-icon"></i>
                 </div>
                 <div class="menu-cart-login-box">
-                    <a class="menu-button" href="./index.html">Volver <i class="fa-solid fa-arrow-left"></i></a>
+                    <a class="menu-button" href="./login.html">Ingresar <i class="fa-solid fa-user"></i></a>
                 </div>
             </nav>
         </section>
     </header>
-
     <main>
         
         <section class="login">
             <div class="login-container container">
-                <h1 class="login-form-title">Iniciar Sesión</h1>
-                <form class="login-form" action="#">
-                    <label class="login-form-label" for="email">
-                        <input class="login-form-input form-input" type="email" id="email" name="email" autocomplete="off" placeholder="Escriba su correo electrónico" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" title="Ingrese un correo válido">
-                        <span class="input-message-error">Este campo no es válido</span>
-                    </label>
-                        <label class="login-form-label" for="password">
-                        <input class="login-form-input form-input" type="password" id="password" name="password" autocomplete="off" placeholder="Escriba su contraseña" required>
-                        <span class="input-message-error">Este campo no es válido</span>
-                    </label>
-                    <button class="login-form-submit" type="submit" id="login">Ingresar</button>
-                    <p class="login-message-error">*El email y/o la contraseña es incorrecto/a</p>
-                </form>
+                <h1 class="login-form-title">Registro completado</h1>
+                <i class="fa-solid fa-circle-check medium-icon"></i>
+                <a class="login-back" href="./admin.html">Volver <i class="fa-solid fa-arrow-left"></i></a>
             </div>
         </section>
 
     </main>
-
+         <!---------------------------- SECCION FOOTER ----------------------->
     <footer class="footer">
         <div class="footer-container container">
-            <img class="footer-logo-img" src="./img/Logo.svg" alt="alurageek">
+            <img src="./img/Logo.svg" alt="" class="footer-logo-img">
             <ul class="footer-list">
                 <li class="footer-item-list"><a href="#">Quiénes somos</a></li>
                 <li class="footer-item-list"><a href="#">Política de privacidad</a></li>
                 <li class="footer-item-list"><a href="#">Programa de fidelidad</a></li>
                 <li class="footer-item-list"><a href="#">Nuestras tiendas</a></li>
-                <li class="footer-item-list"><a href="#">Franquicia</a></li>
+                <li class="footer-item-list"><a href="#">Franquicias</a></li>
                 <li class="footer-item-list"><a href="#">Anuncie aquí</a></li>
             </ul>
             <div class="footer-form-box">
                 <h3 class="footer-form-title">Hable con nosotros</h3>
-                <form class="footer-form" action="./message-sent.html">
-                    <label class="footer-form-label" for="name" >
+                <form action="" class="footer-form">
+                    <label for="name" class="footer-form-label">
                         <p class="footer-form-field">Nombre:</p>
-                        <input class="footer-form-input form-input" type="text" id="name" name="name" autocomplete="off" required maxlength="40">
-                        <span class="input-message-error">Este campo no es válido</span>
+                        <input type="text" class="footer-form-input" id="name" name="name" autocomplete="off" required>
                     </label>
-                    <label class="footer-form-label" for="message">
+                    <label for="message" class="footer-form-label">
                         <p class="footer-form-field">Mensaje:</p>
-                        <textarea class="footer-form-input form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required maxlength="120"></textarea>
-                        <span class="input-message-error">Este campo no es válido</span>
+                        <textarea class="footer-form-input" type="text" name="message" id="message" 
+                       autocomplete="off" rows="5" required></textarea>
                     </label>
-                    <button class="footer-form-submit" type="submit" id="submit">Enviar mensaje</button>
+                    <button class="footer-form-submit" type="submit" id="submit">Enviar Mensaje</button>
                 </form>
             </div>
         </div>
@@ -98,9 +91,9 @@
             </div>
         </div>
     </footer>
+
     <script src="./js/searchButton.js"></script>
     <script src="./js/forms.js"></script>
-    <script src="./js/login.js"></script>
-    <script src="./main.js"></script>
+    
 </body>
 </html>

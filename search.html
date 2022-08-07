@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Busqueda</title>
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./img/page-icon.png" type="image/x-icon" />
+</head>
+
+<script>
+    function imgErrorHTML(image) {
+        image.src = './img/default-img.png';
+    }
+</script>
+
+<body>
+    <header>
+        <section class="menu">
+            <nav class="menu-nav container">
+                <a class="menu-logo-box" href="./index.html">
+                    <img class="menu-logo-img" src="./img/Logo.svg" alt="alurageek">
+                </a>
+                <div class="menu-search-box">
+                    <input type="search" class="menu-search-input" placeholder="¿Qué deseas buscar?">
+                    <i class="fa-solid fa-magnifying-glass menu-search-icon"></i>
+                </div>
+                <div class="menu-cart-login-box">
+                    <a class="menu-button" href="./index.html">Volver <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </nav>
+        </section>
+
+    </header>
+
+    <main class="main-eshop">
+
+        <section class="all-products category container">
+            <div class="category-title-box">
+                <h2 class="category-title">Resultados de la búsqueda</h2>
+            </div>
+            <div class="all-products-stock">
+                <a class="category-product" href="#">
+                    <img class="category-img" src="./img/default-img.png" alt="starwars">
+                    <div class="category-text">
+                        <p class="category-category">Categoría test</p>
+                        <h4 class="category-name">Nombre test</h4>
+                        <p class="category-price">$ 9999</p>
+                        <p class="category-detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
+                    </div>
+                </a>
+                <a class="category-product" href="#">
+                    <img class="category-img" src="./img/default-img.png" alt="starwars">
+                    <div class="category-text">
+                        <p class="category-category">Categoría test</p>
+                        <h4 class="category-name">Nombre test</h4>
+                        <p class="category-price">$ 9999</p>
+                        <p class="category-detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
+                    </div>
+                </a>
+                <a class="category-product" href="#">
+                    <img class="category-img" src="./img/default-img.png" alt="starwars">
+                    <div class="category-text">
+                        <p class="category-category">Categoría test</p>
+                        <h4 class="category-name">Nombre test</h4>
+                        <p class="category-price">$ 9999</p>
+                        <p class="category-detail">Ver producto <i class="fa-solid fa-arrow-right-to-bracket"></i></p>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <img class="footer-logo-img" src="./img/Logo.svg" alt="alurageek">
+            <ul class="footer-list">
+                <li class="footer-item-list"><a href="#">Quiénes somos</a></li>
+                <li class="footer-item-list"><a href="#">Política de privacidad</a></li>
+                <li class="footer-item-list"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer-item-list"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer-item-list"><a href="#">Franquicia</a></li>
+                <li class="footer-item-list"><a href="#">Anuncie aquí</a></li>
+            </ul>
+            <div class="footer-form-box">
+                <h3 class="footer-form-title">Hable con nosotros</h3>
+                <form class="footer-form" action="./message-sent.html">
+                    <label class="footer-form-label" for="name" >
+                        <p class="footer-form-field">Nombre:</p>
+                        <input class="footer-form-input form-input" type="text" id="name" name="name" autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <label class="footer-form-label" for="message">
+                        <p class="footer-form-field">Mensaje:</p>
+                        <textarea class="footer-form-input form-input" type="text" id="message" name="message" rows="5" autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </label>
+                    <button class="footer-form-submit" type="submit" id="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-dev">
+            <div class="footer-dev-name">
+                <span>Pablo Moya &COPY;<span id="year"></span></span>
+            </div>
+            <div class="footer-dev-links">
+                <a href="https://github.com/Mpablom"><i class="fa-brands fa-github" id="footer-dev-icons"></i></a>
+                <a href="https://www.linkedin.com/in/pablo-moya-a24525181/"><i class="fa-brands fa-linkedin-in" id="footer-dev-icons"></i></a>
+                <a href="https://www.facebook.com/pablo.moya.940/"><i class="fa-brands fa-facebook" id="footer-dev-icons"></i></a>
+                <a href="https://twitter.com/Pablosj_10"><i class="fa-brands fa-twitter" id="footer-dev-icons"></i></a>
+                <a href="https://www.instagram.com/pablomoyasj/?hl=es"><i class="fa-brands fa-instagram" id="footer-dev-icons"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/searchButton.js"></script>
+    <script src="./js/forms.js"></script>
+    <script src="./controllers/searchProducts.js" type="module"></script>
+</body>
+</html>
