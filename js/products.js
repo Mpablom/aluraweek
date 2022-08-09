@@ -30,7 +30,7 @@ const writeTitle = (section, categoryName) => {
     title.textContent = categoryName;
 }
 
-const showProducts = (arrProducts, section, index) => {
+const showProducts = (arrProducts, section) => {
         const categoryCarousel = section.querySelector('.category-carousel');
         categoryCarousel.innerHTML = '';
         arrProducts.forEach(product => {
