@@ -10,7 +10,7 @@
     },
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/Mpablom/E-commerce__AluraWeek"
+      "url": "git+https://github.com/Mpablom/alurageek"
     },
     "keywords": [],
     "author": "",
@@ -18,7 +18,7 @@
     "bugs": {
       "url": "https://github.com/Mpablom/E-commerce__AluraWeek/issues"
     },
-    "homepage": "https://github.com/Mpablom/E-commerce__AluraWeek#readme",
+    "homepage": "https://glowing-moonbeam-01e703.netlify.app/",
     "dependencies": {
       "browser-sync": "^2.27.10",
       "json-server": "^0.17.0"
