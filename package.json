@@ -2,8 +2,11 @@
   "name": "aluraweek",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "scripts": {
+    "start": "npm run open && npm run server",
+    "open": "npx browser-sync start",
+    "server": "npx json-server --watch db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
