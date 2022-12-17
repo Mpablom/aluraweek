@@ -1,3 +1,5 @@
+const port = process.env.PORT || 4000;
+
 const createProduct = async (jsonProduct) => {
     try {
         const response = await fetch(``, {
