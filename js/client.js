@@ -1,6 +1,6 @@
 const createProduct = async (jsonProduct) => {
     try {
-        const response = await fetch(`https://alura-geek-ecommerce.herokuapp.com/products`, {
+        const response = await fetch(``, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -13,18 +13,18 @@ const createProduct = async (jsonProduct) => {
     }
 }
 
-const readProducts = () => fetch('https://alura-geek-ecommerce.herokuapp.com/products').then(response => response.json());
+const readProducts = () => fetch('').then(response => response.json());
 
-const readProduct = (id) => fetch(`https://alura-geek-ecommerce.herokuapp.com/products/${id}`).then(response => response.json());
+const readProduct = (id) => fetch(`${id}`).then(response => response.json());
 
 const deleteProduct = (id) => {
-    return fetch(`https://alura-geek-ecommerce.herokuapp.com/products/${id}`, {
+    return fetch(`${id}`, {
         method: 'DELETE'
     });
 };
 
 const updateProduct = (id, jsonProduct) => {
-    return fetch(`https://alura-geek-ecommerce.herokuapp.com/products/${id}`, {
+    return fetch(`${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'
