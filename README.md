@@ -4,5 +4,5 @@
 Proyecto realizado para Alura en el marco del programa Oracle next education.
 
 La página en github no funciona adjunto el Link para el que quiera visitarla:
-https://ephemeral-arithmetic-967c84.netlify.app
+https://e-commerce-alurageek.netlify.app/
 
