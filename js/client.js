@@ -1,8 +1,6 @@
-const port = process.env.PORT || 4000;
-
 const createProduct = async (jsonProduct) => {
     try {
-        const response = await fetch(``, {
+        const response = await fetch(`http://localhost:3000/products`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -15,18 +13,18 @@ const createProduct = async (jsonProduct) => {
     }
 }
 
-const readProducts = () => fetch('').then(response => response.json());
+const readProducts = () => fetch('http://localhost:3000/products').then(response => response.json());
 
-const readProduct = (id) => fetch(`${id}`).then(response => response.json());
+const readProduct = (id) => fetch(`http://localhost:3000/products/${id}`).then(response => response.json());
 
 const deleteProduct = (id) => {
-    return fetch(`${id}`, {
+    return fetch(`http://localhost:3000/products/${id}`, {
         method: 'DELETE'
     });
 };
 
 const updateProduct = (id, jsonProduct) => {
-    return fetch(`${id}`, {
+    return fetch(`http://localhost:3000/products/${id}`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

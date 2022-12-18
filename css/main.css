@@ -185,11 +185,13 @@ HERO
     outline: none;
     width: 8rem;
     text-align: center;
+    transition: all .4s ease-in-out;
 }
 
 .hero-action-button:hover{
     background-color: var(--color-dark-blue);
     cursor: pointer;
+    transform: scale(1.2);
 }
 
 /*
@@ -378,6 +380,7 @@ FOOTER
     background-color: var(--color-dark-blue);
     cursor: pointer;
 }
+
 .footer-dev{
     background-color: var(--color-white);
     padding: .5rem 0;
@@ -405,8 +408,11 @@ FOOTER
     width: 40%;
     margin-bottom: 20px;
     margin-left: 5px;
-    
-    
+    color: blue;
+    transition: all .4s ease-in-out;
+}
+#footer-dev-icons:hover{
+    transform: scale(1.5);
 }
 
 /*
