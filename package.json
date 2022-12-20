@@ -4,7 +4,7 @@
   "description": "",
   "main": "client.js",
   "scripts": {
-    "start": "npm run open && npm run start",
+    "start": "npm run open && npm run server",
     "open": "npx browser-sync start",
     "server": "npx json-server --watch db.json",
     "test": "echo \"Error: no test specified\" && exit 1"
