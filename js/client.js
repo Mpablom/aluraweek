@@ -1,6 +1,6 @@
 const createProduct = async (jsonProduct) => {
     try {
-        const response = await fetch(`http://localhost:3000/products`, {
+        const response = await fetch(`https://e-commerce-alurageek-default-rtdb.firebaseio.com/products.json`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -13,18 +13,18 @@ const createProduct = async (jsonProduct) => {
     }
 }
 
-const readProducts = () => fetch('http://localhost:3000/products').then(response => response.json());
+const readProducts = () => fetch('https://e-commerce-alurageek-default-rtdb.firebaseio.com/products.json').then(response => response.json());
 
-const readProduct = (id) => fetch(`http://localhost:3000/products/${id}`).then(response => response.json());
+const readProduct = (id) => fetch(`https://e-commerce-alurageek-default-rtdb.firebaseio.com/products/${id}.json`).then(response => response.json());
 
 const deleteProduct = (id) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://e-commerce-alurageek-default-rtdb.firebaseio.com/products/${id}.json`, {
         method: 'DELETE'
     });
 };
 
 const updateProduct = (id, jsonProduct) => {
-    return fetch(`http://localhost:3000/products/${id}`, {
+    return fetch(`https://e-commerce-alurageek-default-rtdb.firebaseio.com/products/${id}.json`, {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json'

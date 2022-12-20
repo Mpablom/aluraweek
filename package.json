@@ -2,7 +2,7 @@
   "name": "aluraweek",
   "version": "1.0.0",
   "description": "",
-  "main": "client.js",
+  "main": "index.js",
   "scripts": {
     "start": "npm run open && npm run server",
     "open": "npx browser-sync start",
